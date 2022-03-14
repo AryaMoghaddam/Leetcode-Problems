@@ -1,0 +1,5 @@
+# Write your MySQL query statement below
+SELECT t2.id
+FROM Weather t1, Weather t2
+WHERE t2.recordDate -INTERVAL 1 DAY =t1.recordDate
+AND t2.temperature > t1.temperature
